@@ -1,0 +1,47 @@
+ 
+ di VS CODE
+ Ada format2
+ 
+ 
+ masukkan teks hello
+ 
+ <body>
+    <h1 class="text-center text-success">Hello, world!</h1>
+	
+	==================
+	masukan logo navbar
+	
+    <nav class="navbar navbar-light bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" />
+        </a>
+      </div>
+	  ============
+	  masukan gambar
+	  
+	  <img src="img/foto.jpg" alt="Rendi Pribadi">
+	  
+	  ================
+	  pembuatan style.css (jumbotron)
+	  ==============
+	  pembuatan folder>img>foto.jpg
+	  =============
+	  
+	  bootstrap v5
+	  navbar
+	  images thumbnail
+	  shadow
+	  jumbotron v4
+	  layout>column
+	  fontsize
+	  ===========
+	  .jumbotron {
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+=====================
+https://getwaves.io/
+pembuatan efek gelombang masuk (jumbotron)
+===================
+	  
