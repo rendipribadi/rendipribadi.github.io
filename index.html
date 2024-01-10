@@ -5,214 +5,252 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!--Bootstrap Icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <!--My CSS-->
-<link rel="stylesheet" href="style.css" />
-
-    <!--Akhir My CSS-->
-    <title>My Portfolio | Rendi Pribadi</title>
+    <!-- mycss -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard | Rendi Pribadi</title>
+    <style>
+      .container {
+        flex-shrink: unset;
+      }
+    </style>
   </head>
   <body id="home">
-    <!--NAVBAR-->
-    </nav>
-    <nav class="navbar navbar-dark bg-primary shadow p-3 fixed-top">
+    <!-- untuk memberikan efek tombol warna <button class="btn btn-warning"></button> -->
+    <!-- <button class="btn btn-warning">
+          <a href="https://web.facebook.com/rendi.pribadi"><strong>Hello, Rendi!</strong></a>
+        </button> -->
+
+    <!-- NAVBAR -->
+    <!-- fixed-top ini agar navbar atas (menu2) tetap pada posisi -->
+    <nav class="navbar navbar-expand-lg navbar-light btn btn-warning shadow fixed-top">
+      <!-- --style="background-color: #e62424c5"> -->
       <div class="container">
+        <!-- --"container-fluid" menjadi "container"> memberikan efek menjorok kedalam -->
+        <a class="navbar-brand" href="#">
+          <img src="img/1.png" alt="" width="30" height="28" />
+        </a>
         <a class="navbar-brand" href="#">Rendi Pribadi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- ul : ms-auto untuk membuat menubar posisi kanan -->
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link active" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link active" href="#projects">Project</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link active" href="#contact">Contact</a>
             </li>
-           
           </ul>
         </div>
       </div>
-      
     </nav>
-    
-    <!--AKHIR NAVBAR-->
-    <!--JUMBOTRON-->
+    <!-- AKHIR NAVBAR -->
+
+    <!-- jumbotron -->
     <section class="jumbotron text-center">
-        <img src="img/foto.jpg" alt="Rendi Pribadi" width="200" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">Rendi Pribadi</h1>
-        <p class="lead">Web Developer | Database Administration (DBA)</p>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFFF" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,90.7C320,117,400,171,480,197.3C560,224,640,224,720,192C800,160,880,96,960,101.3C1040,107,1120,181,1200,208C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>    
-    </section>
-    <!--AKHIR JUMBOTRON-->
+      <img src="img/1.png" alt="Rendi Pribadi" width="200" />
+      <!-- class="rounded-circle img-thumbnail" -->
 
-    <!--About-->
+      <h1 class="display-4">Rendi Pribadi</h1>
+      <p class="lead"><strong>DBA | Web Design | UI/UX Designer</strong></p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,192L48,202.7C96,213,192,235,288,250.7C384,267,480,277,576,261.3C672,245,768,203,864,170.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- <ol>
+      <li>LIST 1</li>
+      <li>LIST 2</li>
+      <li>LIST 3</li>
+      <li>LIST 4</li>
+    </ol>
+    <ul>
+      <li>LIST 1</li>
+      <li>LIST 2</li>
+      <li>LIST 3</li>
+      <li>LIST 4</li>
+    </ul>
+    <table>
+      <tr>
+        <thead>
+          <td colspan="2">no</td>
+          <td>nama</td>
+          <td>kelas</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">1</td>
+            <td>Rendi</td>
+            <td>12 IPA 1</td>
+          </tr>
+        </tbody>
+      </tr>
+    </table> -->
+    <!-- akhir jumbotron -->
+
+    <!-- --about >>> masuk ke getbootstrap cari LAYOUT/CONTAINER-->
     <section id="about">
-<div class="container">
-    <div class="row text-center mb-3">
-        <div class="col">
-            <H2>About Me</H2>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>ABOUT ME</h2>
+            <p></p>
+          </div>
         </div>
-    </div>
-
-    <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error quos commodi incidunt ipsum fugit magni harum consectetur dolores asperiores?</p>
+        <!-- row menggunakan flexbox justify-content-center fs-5 = baris konten tengah dengan fontsize(fs) ukuran 5,tulisan rata tengah -->
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita officiis ullam laudantium, sint accusantium laborum molestias non magni tenetur cum.</p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, aspernatur voluptatem! Quae neque, commodi dolorum excepturi dolore, accusamus suscipit dicta corrupti facilis architecto eligendi quia fuga magnam quisquam
+              adipisci exercitationem.
+            </p>
+          </div>
         </div>
-        <div class="col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque illum voluptatum voluptatibus nihil! Rerum accusantium cupiditate sequi earum culpa voluptatibus, facilis vero illum maiores temporibus?</p>
-        </div>
-    </div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,160L30,176C60,192,120,224,180,213.3C240,203,300,149,360,112C420,75,480,53,540,85.3C600,117,660,203,720,208C780,213,840,139,900,117.3C960,96,1020,128,1080,149.3C1140,171,1200,181,1260,186.7C1320,192,1380,192,1410,192L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#eedba7"
+          fill-opacity="1"
+          d="M0,64L80,106.7C160,149,320,235,480,234.7C640,235,800,149,960,112C1120,75,1280,85,1360,90.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <!--Akhir ABOUT-->
 
-    <!--Project-->
+    <!-- PROJECTS -->
     <section id="projects">
-        <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>My Projects</h2>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col"></div>
+          <h2>PROJECT</h2>
+          <div class="row mt-4">
+            <!--mb =margin bottom-->
+            <div class="col-md-4 mb-3">
+              <!-- md = medium scala untuk inspect element-->
+              <!-- doc bootstrap>pilih Component>Card, lalu cari card untuk modelgambar -->
+              <div class="card">
+                <img src="img/projects/1.jpg" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
+              </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
+            <div class="col-md-4 mb-3">
+              <!-- doc bootstrap>pilih Component>Card, lalu cari card untuk modelgambar -->
+              <div class="card">
+                <img src="img/projects/2.jpg" class="card-img-top" alt="project2" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                </div>
+              </div>
             </div>
+            <div class="col-md-4 mb-3">
+              <!-- doc bootstrap>pilih Component>Card, lalu cari card untuk modelgambar -->
+              <div class="card">
+                <img src="img/projects/3.jpg" class="card-img-top" alt="project3" />
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,32L34.3,69.3C68.6,107,137,181,206,208C274.3,235,343,213,411,197.3C480,181,549,171,617,186.7C685.7,203,754,245,823,245.3C891.4,245,960,203,1029,170.7C1097.1,139,1166,117,1234,106.7C1302.9,96,1371,96,1406,96L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-    </section> 
-    <!--Akhir Projects-->
-
-    <!--Contact-->
-    <section id="contact">
-        <div class="CONTAINER">
-            <div class="row text-center mb-3">
-                <div class="col">
-                    <h2>Contact Us</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                    <strong>Terimakasih ya!</strong> Pesan anda sudah kami terima..
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-
-                    <form name='contact-form'>
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Nama Lengkap</label>
-                          <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"/>
-                        </div>
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="email" name="email"/>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-                          </div>
-                        <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
-                        <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                          Loading...
-                        </button>
-                      </form>
-                </div>
-            </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#6c757d" fill-opacity="1" d="M0,32L48,64C96,96,192,160,288,160C384,160,480,96,576,112C672,128,768,224,864,250.7C960,277,1056,235,1152,192C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fFFFFF"
+          fill-opacity="1"
+          d="M0,96L60,96C120,96,240,96,360,128C480,160,600,224,720,224C840,224,960,160,1080,154.7C1200,149,1320,203,1380,229.3L1440,256L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
     </section>
-    <!--Akhir Contact-->
 
-    <!--FOOTER-->
-        <footer class="bg-secondary text-white text-center pb-5">
-        <p>Created With <i class="bi bi-heart-fill text-danger"> <i class="bi bi-heart-fill text-danger"> </i><i class="bi bi-heart-fill text-danger"></i></i> by <a href='https://www.instagram.com/radenrendi/'class="text-white fw-bold">Rendi Pribadi</a></p>
+    <!-- --contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2>CONTACT</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- agar rata tengah uk8 -->
+            <!-- buat form ,buka doc bootstrap>>FORM>OVERVIEW -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">NAMA LENGKAP</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" />
+              </div>
+              <!-- TEXT AREA CARI DI DOC>FORM CONTROL -->
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">PESAN ANDA</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffc107"
+          fill-opacity="1"
+          d="M0,128L60,112C120,96,240,64,360,90.7C480,117,600,203,720,234.7C840,267,960,245,1080,224C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-warning pb-3">
+      <div class="text-center">
+        <p>Created with <i class="bi bi-balloon-heart"></i> 2022 <a href="https://web.facebook.com/rendi.pribadi" class="text-black fw-bold">Rendi Pribadi</a></p>
+      </div>
     </footer>
-    <!--AKHIR FOOTER-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw48b_bAGkbrPlgMLq8VXRcKP9TNsh0QRLnQmv4HOPdZKw1PQB4XvAMmqYMH2Ti2ybR/exec'
-      const form = document.forms['contact-form']
-      const btnKirim=document.querySelector('.btn-kirim');
-      const btnLoading=document.querySelector('.btn-loading');
-      const myAlert=document.querySelector('.my-alert');
 
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        //ketika tombol submit di klik
-        //tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle('d-none');
-        btnKirim.classList.toggle('d-none');
+    <!-- Optional JavaScript; choose one of the two! -->
 
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            //tampilkan tombol kirim, hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            //tampilkan tombol alert
-            myAlert.classList.toggle('d-none');
-            //reset form
-            form.reset();
-
-            console.log('Success!', response)
-          }
-          )
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
- 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
 
+<!-- bikin gelombang 
+https://getwaves.io/
+simpan dalam section jumbotron
 
+-->
+
+<!-- bikin margin
+mb = margin bottom
+mt = margin top
+ms = margin left
+me = margin right
+ -->
+
+<!-- 
+  cari gambar gallery 
+  https://unsplash.com/  -->

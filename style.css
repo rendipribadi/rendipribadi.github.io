@@ -1,11 +1,61 @@
-.jumbotron {
-  padding-top: 6rem;
-  background-color: #e2edff;
-}
-#projects {
-  background-color: #e2edff;
+/* membuat efek scroll tampak ke halaman */
+body {
+  min-height: 2300px;
 }
 
+/* untuk membuat efek warna page backgound */
+.jumbotron {
+  /* padding: 2rem 1rem; untuk pading atas bawah 2, kanan kiri 1 */
+
+  padding-top: 6rem;
+  /* sebelumnya   padding-top: 2rem; */
+  background-color: #eedba7;
+}
+
+#projects {
+  background-color: #eedba7;
+}
+
+/* disemua section tombol berefek */
 section {
   padding-top: 5rem;
+}
+/* ============= */
+table {
+  margin: 0 auto;
+  width: 550px;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+tbody {
+  color: #000;
+}
+table th,
+table td {
+  padding: 5px 10px;
+  border: 2px solid #eef7fb;
+}
+table tr {
+  font: normal 14px Tahoma, Geneva, sans-serif;
+  background: #ecbe04;
+}
+table td {
+  -webkit-transition: all 0.7s ease-in-out 0s;
+  -moz-transition: all 0.7s ease-in-out 0s;
+  -o-transition: all 0.7s ease-in-out 0s;
+  transition: all 0.7s ease-in-out 0s;
+}
+table td:nth-child(2n + 0) {
+  background: #faeebc;
+}
+table td:hover,
+table td:nth-child(2n + 0):hover {
+  background: #eef7fb;
+}
+table th {
+  background: #3ea4d0;
+  color: #daeef6;
+  text-shadow: 1px 1px 0 #1f627f;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 0 100px rgba(0, 0, 0, 0.15) inset;
+  font: bold 16px Arial, Helvetica, sans-serif;
 }
