@@ -60,9 +60,42 @@
   color: white;
 }
 
+  /* The dots/bullets/indicators MLSNGODING*/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
+/* .active, .dot:hover {
+  color: yellow;
+} */
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*       akhir slider */
+      
     </style>
   </head>
+  
   <body id="home">
     <!-- untuk memberikan efek tombol warna <button class="btn btn-warning"></button> -->
     <!-- <button class="btn btn-warning">
@@ -128,22 +161,73 @@
           d="M0,192L48,202.7C96,213,192,235,288,250.7C384,267,480,277,576,261.3C672,245,768,203,864,170.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </svg>
-  
 
+<!--       penambahan slider -->
+<!-- slide 1 -->
+      <div class=malasngoding-slider>
+        <div class=isi-slider>
+          <img src="img/projects/1.jpg" alt="Gambar 1">
+          <img src="img/projects/2.jpg" alt="Gambar 2">
+          <img src="img/projects/3.jpg" alt="Gambar 3">
+          <img src="img/projects/2.jpg" alt="Gambar 4">
+        </div>
+      </div>
 
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      </script>
+      
+<!--       akhir slider -->
+      
     </section>
+
     <!-- <ol>
       <li>LIST 1</li>
       <li>LIST 2</li>
       <li>LIST 3</li>
       <li>LIST 4</li>
     </ol>
+    
     <ul>
       <li>LIST 1</li>
       <li>LIST 2</li>
       <li>LIST 3</li>
       <li>LIST 4</li>
     </ul>
+    
     <table>
       <tr>
         <thead>
@@ -160,6 +244,7 @@
         </tbody>
       </tr>
     </table> -->
+    
     <!-- akhir jumbotron -->
 
     <!-- --about >>> masuk ke getbootstrap cari LAYOUT/CONTAINER-->
